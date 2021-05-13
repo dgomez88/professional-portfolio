@@ -1,13 +1,18 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
 
 /* adding font for all page */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: lightgray;
+    font-family: Helvetica, Arial, sans-serif;
 } 
+
+header {
+    padding: 30px 35px;
+    background-color: navy;
+}
 
 /* apply styles to <header> */
 header h1 {
@@ -16,18 +21,21 @@ header h1 {
     margin: 0;
     text-decoration: underline;
     display: inline;
+    color: white;
 }
 
+/* apply styles to <a> */
 header a {
     text-decoration: none;
+    color: white;
   }
 
 header nav {
     float: right;
     margin: 7px 0;
-  }
+}
 
-/* apply styles to <a> */
+
 header nav ul li {
     display: inline;
 }
@@ -38,4 +46,93 @@ header nav ul li a {
     font-weight: bold;
     font-size: 24px;
     float: right;
+}
+
+section {
+    background-color: white;
+}
+
+.about-me {
+    text-align: center;
+}
+
+.about-me h2 {
+    padding: 35px 0 0 0;
+    border-bottom: 3px solid;
+    display: inline-block;
+    width: 25%;
+}
+
+.about-me-info {
+    text-align: center;
+    padding: 35px;
+    font-size: 20px;
+}
+
+.work-experience {
+    text-align: center;
+}
+
+.work-experience h2 {
+    padding: 35px 0 0 0;
+    border-bottom: 3px solid;
+    display: inline-block;
+    width: 25%;
+}
+
+.sabre {
+    padding: 15px;
+    font-size: 20px;
+}
+
+.sally-beauty {
+    padding: 15px;
+    font-size: 20px;
+}
+
+.alon-usa {
+    padding: 15px;
+    font-size: 20px;
+}
+
+.built-website {
+    text-align: center;
+}
+
+.built-website h2 {
+    padding: 35px 0 0 0;
+    border-bottom: 3px solid;
+    display: inline-block;
+    width: 25%;
+}
+
+.website-url  {
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.contact-me {
+    text-align: center;
+    padding: 35px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* footer added */
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    background-color: ;
+    padding: 30px 35px;
+    background-color: navy;
 }
