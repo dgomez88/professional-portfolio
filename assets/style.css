@@ -68,12 +68,12 @@ section {
 }
 
 .about-me-info {
-    text-align: center;
+    text-align:justify
     padding: 35px;
     font-size: 20px;
+    display: block;
+    flex-wrap: wrap;
 }
-
-
 
 .work-experience {
     text-align: center;
@@ -116,7 +116,11 @@ section {
     text-align: center;
     padding: 15px;
     font-size: 20px;
+    display: block;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
+
 
 .contact-me {
     padding: 35px;
@@ -139,4 +143,20 @@ footer {
     background-color: ;
     padding: 30px 35px;
     background-color: navy;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width:980px) {
+
+}
+
+
+/*MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+}
+
+/*MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    
 }
