@@ -11,7 +11,7 @@ body {
 
 header {
     padding: 30px 35px;
-    background-color: navy;
+    background-color: rgb(4, 0, 255 );
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -60,42 +60,64 @@ header nav ul li a:hover {
 }
 
 section {
-    background-color: white;
+    background-color:rgb(220, 240, 245);
 }
 
 
 .about-me {
     text-align: center;
+    float: right;
 }
 
-.about-me-dario {
-    border-radius: 8px;
-    padding 5px;  
-}
-
-.about-me h2 {
-    padding: 35px 0 0 0;
-    display: inline-block;
-    width: 25%;
-}
-
-.about-me-info {
-    text-align:justify
-    padding: 35px;
-    font-size: 20px;
-    display: block;
+.about-me-section {
+    padding: 50px;
+    display: flex;
     flex-wrap: wrap;
 }
 
-.work-experience-box {
+.about-me-div {
     text-align: center;
+    background-color: rgba(0, 153, 255, 0.123);
+    border-radius: 15px;
+    
+}
+
+.about-me-div h2 {
+    padding: 20px;
+}
+
+.about-me-info {
+    padding: 35px;
+    font-size: 20px;
+}
+
+.img-about-me-dario {
+    border-radius: 15px;
+    padding 5px;
+}
+
+.about-me-info {
+    padding: 10px;
+}
+
+.work-experience-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.work-experience-div {
+    text-align: center;
+    background-color: rgba(0, 153, 255, 0.123);
+    border-radius: 15px;
+    padding: 30px;
 }
 
 .work-experience h2 {
-    padding: 35px 0 0 0;
-    border-bottom: 3px solid;
+    padding: 20px;
     display: inline-block;
-    width: 25%;
+    width: 100%;
 }
 
 .sabre {
@@ -113,67 +135,84 @@ section {
     font-size: 20px;
 }
 
+.built-website-section {
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.built-website-div {
+    background-color: rgba(0, 153, 255, 0.123);
+    border-radius: 15px;
+}
+
 .built-website {
     text-align: center;
-    
+   
 }
 
 .built-website h2 {
-    padding: 35px 0 0 0;
-    border-bottom: 3px solid;
     display: inline-block;
-    width: 75%;
+    width: 100%;
+    padding: 20px;
 
 }
 
 .website-url  {
-    padding: 30px;
+    padding: 10px;
     font-size: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap; 
-    
-}
+    } 
+
 
 .website-runbuddy{
-    padding: 5px;
+    padding: 10px;
     text-align: center; 
 }
 
 .website-horiseon{
     text-align: center;
-    padding: 5px;
+    padding: 10px;
 }
 
 .img-runbuddy {
-    border-radius: 8px;
+    border-radius: 15px;
     padding 5px;
 }
 
 .img-runbuddy:hover {
-    box-shadow: 0 0 5px 5px navy;
-    
+    box-shadow: 0 0 10px 10px rgb(4, 0, 255);;    
 }
 
 .img-horiseon {
-    border-radius: 8px;
+    border-radius: 15px;
     padding 5px;
 }
 
 .img-horiseon:hover {
-    box-shadow: 0 0 5px 5px navy;
+    box-shadow: 0 0 10px 10px rgb(4, 0, 255);
 }
 
 
 .contact-me {
-    padding: 35px;
+    padding: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
+.contact-me-div {
+    background-color: rgba(0, 153, 255, 0.123);
+    border-radius: 15px;
+    padding: 25px;
+}
+
 .contact-me h2 {
-    text-decoration-line: underline;
+    text-align: center;
+}
+
+.contact-me h3 {
+    text-align: center;
+    padding: 10px 10px 0 0;
 }
 
 
@@ -185,21 +224,35 @@ footer {
     font-size: smaller;
     background-color: ;
     padding: 30px 35px;
-    background-color: navy;
+    background-color: rgb(4, 0, 255);;
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width:980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+      }
 
-}
+      header h1 {
+        width: 100%;
+        text-align: center;
+      }
 
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+      }
+  
 
-/*MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 768px) {
+    .contact-me-div {
+        background-color: rgba(0, 153, 255, 0.123);
+        border-radius: 15px;
+        padding: 25px;
+    }
+     
 
-}
-
-/*MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-@media screen and (max-width: 575px) {
-
-}
+  
